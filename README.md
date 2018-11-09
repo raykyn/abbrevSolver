@@ -2,7 +2,7 @@
 # HOW TO USE ABBREVSOLVER
 ######
 # First Version By Ismail Prada, 10.10.2017
-# Latest Version By Ismail Prada, 30.10.2017
+# Latest Version By Ismail Prada, 09.11.2018
 ######
 
 ### REQUIREMENTS ###
@@ -12,8 +12,9 @@
 ### INSTALLATION AND STARTUP ###
 - Unzip the directory into a place of your choice.
 - Open a terminal (or command line).
-- Navigate to the Abkürzungsauflöser-Directory.
+- Navigate to the newly created directory.
 - Type: python3 abbrevsolver.py
+- On windows, you might only need to type python or py before the filename.
 - Press enter to start the application.
 
 ### USE ###
@@ -25,7 +26,7 @@
 - Copy the Page-XML content of you Transkribus-file onto the clipboard.
     - Mark everything and press Ctrl+C or CMD+C.
 - Now press the "Paste"-Button in the application.
-- Chosse the data file below that should be used. You can create new data
+- Choose the data file below that should be used. You can create new data
     files by adding them to the "data"-folder. Use existing data-files
     as examples on how to create it. While file ending is unimportant,
     the file should be written as a .tsv-file (fields separated by tabs).
@@ -39,13 +40,14 @@
 Some signs are typical for abbreviations and are thus always tagged, if
 they are not found as part of another abbreviation. The tag given to
 those is "UNBEKANNT".
+To change this, modify the special_chars variable in the script.
         
 ### DATA ###
 In the "data" folder are the files kept, which assign expansions to each
 abbreviation. Abbreviation with multiple possible expansions are separated
 by a pipe sign (|). If there is an "X" in the column "Insecure?",
 the application will add a tag "PRÜFEN" in front of every expansion, so
-a human worker can search for the tag to control all the abbreviations
+a human worker can search for the tag to check all the abbreviations
 which are not always expanded the same way.
 The fourth column "context" can contain three different tags, everything
 else will be ignored: SA, SX, PX.
