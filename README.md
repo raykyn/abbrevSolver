@@ -1,9 +1,8 @@
 ######
 # HOW TO USE ABBREVSOLVER
 ######
-# First Version By Ismail Prada, 10.10.2017
-# Latest Version By Ismail Prada, 09.11.2018
-######
+### First Version By Ismail Prada, 10.10.2017 ###
+### Latest Version By Ismail Prada, 09.11.2018 ###
 
 ### REQUIREMENTS ###
 - Make sure you have Python 3.5 or newer installed, you can find it here:
