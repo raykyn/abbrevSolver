@@ -2,7 +2,7 @@
 # HOW TO USE ABBREVSOLVER
 ######
 ### First Version By Ismail Prada, 10.10.2017 ###
-### Latest Version By Ismail Prada, 09.11.2018 ###
+### Latest Version By Ismail Prada, 30.01.2020 ###
 
 ### WHEN TO USE ###
 - Use this script if you have a lot of recurring abbreviations in your Transkribus texts so you don't have to tag and solve them all by hand.
@@ -62,6 +62,7 @@ else will be ignored: SA, SX, PX.
 
 ### TO DO ###
 - Prettify script
+- Probably will never be done :-)
 
 ### LICENSE ###
 
