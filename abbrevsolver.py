@@ -13,9 +13,15 @@ from tkinter import *
 from tkinter import messagebox
 
 """
-Version 2.0
+Version 2.1
+- Fixed encoding for Windows machines
+- Explained special chars variable
 """
 
+# all chars in this list will be tagged as "insecure" if they are not part of an abbreviation in the tsv-file
+# this is thought to mark abbreviations that are missing in the tsv-file
+# all characters in this list strongly denote abbreviations in german transcriptions.
+# change this to your needs or just delete everything inside the brackets if you don't want it
 special_chars = [b'\xcc\x84', b"'", b'\xcc\x83', b'\xe2\x82\x8e', b'\xcb\x80']
 
 class AbbrExp():
@@ -150,7 +156,7 @@ class AbbrevSolver():
         @param inf: file object (csv)
         """
         abbrList = []
-        with open(inf) as csvfile:
+        with open(inf, encoding="utf8") as csvfile:
             reader = csv.DictReader(csvfile, delimiter="\t")
             for row in reader:
                 if row["Abbreviation"] != "":
