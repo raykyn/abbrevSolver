@@ -4,6 +4,9 @@
 ### First Version By Ismail Prada, 10.10.2017 ###
 ### Latest Version By Ismail Prada, 09.11.2018 ###
 
+### WHEN TO USE ###
+- Use this script if you have a lot of recurring abbreviations in your Transkribus texts so you don't have to tag and solve them all by hand.
+
 ### REQUIREMENTS ###
 - Make sure you have Python 3.5 or newer installed, you can find it here:
     - https://www.python.org/
